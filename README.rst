@@ -1,21 +1,9 @@
-aetcd3
-======
-
-.. image:: https://github.com/martyanov/aetcd3/workflows/build/badge.svg?branch=master
-   :alt: Build Status
-   :target: https://github.com/martyanov/aetcd3/actions
-
-.. image:: https://codecov.io/gh/martyanov/aetcd3/coverage.svg?branch=master
-   :alt: Coverage report
-   :target: https://codecov.io/gh/martyanov/aetcd3/branch/master
+aetcd3 for Project Aquarium
+============================
 
 .. image:: https://img.shields.io/badge/docs-aetcd3.rtfd.io-green.svg
    :alt: Documentation
    :target: https://aetcd3.readthedocs.io
-
-.. image:: https://img.shields.io/pypi/v/aetcd3.svg
-   :alt: PyPI Version
-   :target: https://pypi.python.org/pypi/aetcd3
 
 .. image:: https://img.shields.io/pypi/pyversions/aetcd3.svg
    :alt: Supported Python Versions
@@ -25,12 +13,33 @@ aetcd3
    :alt: License
    :target: https://github.com/martyanov/aetcd3/blob/master/LICENSE
 
+Note Before
+~~~~~~~~~~~~
+
+This is a forked repository from `aetcd3`_ by @martyanov.
+
+At Aquarist Labs we found it necessary to fork and maintain some patches we
+need for the development of `Aquarium`_, simply because our development pace
+may at times overtake the time it would take to merge patches into the original
+repository.
+
+We deeply believe in cooperating with the upstreams of the projects we use, and
+thus we intend to contribute our efforts to aetcd3 as much as possible, should
+they be welcome.
+
+At this point in time, we have no plans to provide a PyPI package based on our
+fork.
+
+
+.. _aetcd3: https://github.com/martyanov/aetcd3
+.. _Aquarium: https://github.com/aquarist-labs/aquarium
+
 Installation
 ~~~~~~~~~~~~
 
 .. code:: bash
 
-    $ python3 -m pip install aetcd3
+    $ python3 -m pip install git+https://github.com/aquarist-labs/aetcd3/@aquarium#egg=aetcd3
 
 Basic usage
 ~~~~~~~~~~~
